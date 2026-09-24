@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <style>
+      .pulse-line {
+        stroke-dasharray: 20, 10, 5, 10;
+        animation: dash 12s linear infinite;
+      }
+      .node-pulse {
+        animation: pulse 3s ease-in-out infinite alternate;
+      }
+      .node-pulse-delayed {
+        animation: pulse 3s ease-in-out 1.5s infinite alternate;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: -300;
+        }
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.4; }
+        100% { transform: scale(1.4); opacity: 0.9; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="300" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Background Decorative Dynamic Network Graph Grid (Behind Text) -->
+  <g stroke="url(#accent-grad)" stroke-opacity="0.25" stroke-width="1.5" fill="none">
+    <!-- Connecting Nodes Lines -->
+    <path class="pulse-line" d="M 50,50 L 150,120 L 280,60 L 400,180 L 220,240 L 80,220 Z"/>
+    <path class="pulse-line" d="M 1150,50 L 1020,130 L 920,70 L 820,210 L 980,250 L 1120,210 Z"/>
+    <path class="pulse-line" d="M 150,120 L 320,160 L 500,80 L 700,80 L 880,160 L 1020,130"/>
+    <path d="M 280,60 L 500,80 L 600,240 L 400,180"/>
+    <path d="M 920,70 L 700,80 L 600,240 L 820,210"/>
+  </g>
+
+  <!-- Glowing Animated Data Nodes (Background/Sides) -->
+  <g fill="#a855f7" opacity="0.6">
+    <circle cx="150" cy="120" r="6" class="node-pulse"/>
+    <circle cx="280" cy="60" r="4" class="node-pulse-delayed"/>
+    <circle cx="400" cy="180" r="5" class="node-pulse"/>
+    <circle cx="1020" cy="130" r="6" class="node-pulse-delayed"/>
+    <circle cx="920" cy="70" r="4" class="node-pulse"/>
+    <circle cx="820" cy="210" r="5" class="node-pulse-delayed"/>
+  </g>
+  
+  <g fill="#38bdf8" opacity="0.7">
+    <circle cx="50" cy="50" r="5" class="node-pulse-delayed"/>
+    <circle cx="220" cy="240" r="6" class="node-pulse"/>
+    <circle cx="1150" cy="50" r="5" class="node-pulse"/>
+    <circle cx="980" cy="250" r="6" class="node-pulse-delayed"/>
+  </g>
+
+  <!-- Shield Icon Frame (Left Accent) -->
+  <g transform="translate(100, 100)" filter="url(#glow)">
+    <path d="M 30 0 L 60 15 V 45 C 60 70 30 90 30 90 C 30 90 0 70 0 45 V 15 Z" fill="none" stroke="url(#accent-grad)" stroke-width="4"/>
+    <path d="M 30 20 L 45 30 V 48 C 45 62 30 74 30 74 C 30 74 15 62 15 48 V 30 Z" fill="url(#accent-grad)" opacity="0.4"/>
+  </g>
+
+  <!-- Text Foreground (Unobscured & High Contrast) -->
+  <!-- Main Title -->
+  <text x="600" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="1">
+    🛡️ AWESOME AML TRANSACTION MONITORING
+  </text>
+
+  <!-- Subtitle Line 1 -->
+  <text x="600" y="170" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" font-size="20" fill="#38bdf8" letter-spacing="0.5">
+    Curated SaaS Platforms, AI Engines &amp; Open-Source Compliance Tools
+  </text>
+
+  <!-- Subtitle Line 2 / Badges representation -->
+  <text x="600" y="210" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="400" font-size="15" fill="#94a3b8">
+    Anti-Money Laundering • Fraud Detection • Sanctions Screening • Case Management
+  </text>
+
+  <!-- Top and Bottom Accent Borders -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accent-grad)" rx="2"/>
+  <rect x="0" y="295" width="1200" height="5" fill="url(#accent-grad)" rx="2"/>
+</svg>
