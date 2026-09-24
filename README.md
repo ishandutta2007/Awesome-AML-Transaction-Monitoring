@@ -50,9 +50,9 @@ Below is a curated comparison of leading SaaS AML Transaction Monitoring platfor
 
 ## 💻 Open-Source GitHub Repositories
 
-Below are key open-source repositories for building custom transaction monitoring pipelines, graph analytics, watchlist search, and ML compliance risk models, ordered by **Star Count (Descending)**:
+Below are key open-source repositories for building custom transaction monitoring pipelines, graph analytics, watchlist search, and ML compliance risk models, ordered by **Stars_Count (Descending)**:
 
-| Repository 📦 | GitHub Stars ⭐ | Description 📝 |
+| Repository 📦 | GitHub_Stars ⭐ | Description 📝 |
 | :--- | :--- | :--- |
 | **[checkmarble/marble](https://github.com/checkmarble/marble)** | [![Stars](https://img.shields.io/github/stars/checkmarble/marble?style=social&color=white)](https://github.com/checkmarble/marble/stargazers) | Open-source real-time decision engine for fraud detection, AML transaction monitoring & sanctions screening workflows. |
 | **[moov-io/watchman](https://github.com/moov-io/watchman)** | [![Stars](https://img.shields.io/github/stars/moov-io/watchman?style=social&color=white)](https://github.com/moov-io/watchman/stargazers) | Open-source search engine for global watchlists, sanctions lists (OFAC, EU, UN), and PEP screening. |
