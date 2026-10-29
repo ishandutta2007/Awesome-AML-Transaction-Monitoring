@@ -45,6 +45,7 @@ Below is a curated comparison of leading SaaS AML Transaction Monitoring platfor
 | **[ComplyAdvantage](https://complyadvantage.com/)** | **~$141M Valuation** (~$27M ARR) | Starts from **~$15,000 / year** ($1,250/mo base tier) | **14-Day Free API Access Trial** (100 free screening credits) | Real-time AML data, transaction monitoring, ongoing watchlist & PEP screening. |
 | **[Flagright](https://www.flagright.com/)** | **~$12.5M Series A** (~$4.1M ARR) | Starts from **~$15,000 / year** ($1,250/mo starter tier) | **Startup Program:** Free access for 12 months for eligible early-stage startups; 14-day free trial. | API-first no-code transaction monitoring & real-time AML compliance platform for fintechs. |
 | **[AMLYZE](https://amlyze.com/)** | **~$2.5M Seed Raised** (~$2.9M Rev) | Starts from **€500 / month** (Mid-market starter tier) | **14-Day Free Trial** (Includes 500 test transaction runs) | SaaS suite for transaction monitoring, risk scoring, screening & case management for EMIs/fintechs. |
+| **[FreezeRadar](https://freezeradar.com/)** | **Early-stage startup** | Pro from **$4.9 / month** | **Free public address checks** | Wallet screening for freezeable stablecoins: checks USDT/USDC/PAXG/XAUt issuer blacklist (freeze) status and sanctions exposure before settlement, with a live freeze/release feed. |
 
 ---
 
